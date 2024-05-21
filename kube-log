@@ -1,0 +1,19 @@
+## kubectl get pods
+
+
+kubectl logs <pod-name>
+
+
+Specify a Container (if multiple containers in a pod):
+
+If a pod has multiple containers, you can specify which container's logs you want to retrieve by adding the -c or --container flag followed by the container name:
+
+bash
+Copy code
+kubectl logs <pod-name> -c <container-name>
+
+kubectl logs my-pod
+
+Or, if the pod has multiple containers:
+
+kubectl logs my-pod -c my-container

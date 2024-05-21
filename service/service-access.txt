@@ -1,0 +1,56 @@
+To access a service running in your Kubernetes cluster, you typically have a few different options depending on the type of service and your specific use case. Here are some common ways to access a service:
+
+1. **NodePort Service**:
+   - If you have a NodePort service, it exposes the service on a specific port on all nodes in your cluster. You can access the service using any node's IP address and the assigned NodePort.
+   - Find the NodePort number assigned to your service:
+     ```bash
+     kubectl get svc <service-name>
+     ```
+   - Access the service using any node's IP address and the NodePort, like this: `http://node-ip:node-port`.
+
+2. **ClusterIP Service**:
+   - ClusterIP services are accessible only within the Kubernetes cluster. You can use `kubectl port-forward` to forward traffic from your local machine to the service. For example:
+     ```bash
+     kubectl port-forward svc/<service-name> local-port:service-port
+     ```
+     Replace `<service-name>`, `local-port`, and `service-port` with your actual values.
+   - After forwarding the port, you can access the service locally at `http://localhost:local-port`.
+
+3. **LoadBalancer Service**:
+   - LoadBalancer services are typically used in cloud environments. They provision a load balancer that routes external traffic to the service.
+   - After creating a LoadBalancer service, it may take some time for the external IP address to be provisioned. You can check the status with:
+     ```bash
+     kubectl get svc <service-name>
+     ```
+   - Once an external IP is assigned, you can access the service using that IP.
+
+4. **Ingress Controller**:
+   - If you have an Ingress controller set up, you can define Ingress resources to route traffic to your services based on hostname or URL path.
+   - To access a service through an Ingress, you typically need to configure DNS records or hosts file entries to point to the Ingress controller's IP address or hostname.
+
+5. **Using a Domain Name**:
+   - If you have a domain name, you can create DNS records (A or CNAME) that point to the external IP address or hostname of your service.
+
+6. **Service Discovery**:
+   - Inside your cluster, services can often be accessed by their service name. For example, if you have a service named `my-service`, you can access it from within another pod using `http://my-service:service-port`.
+
+The method you choose depends on your specific use case and the type of service you have deployed. If you have more specific details about your service and how you'd like to access it, please provide additional information, and I can give more tailored guidance.
+
+
+
+PS D:\Salesforce_apache_camel\kubenates\cammands> kubectl apply -f .\mysql-deployment.yaml
+deployment.apps/mysql-deployment created
+service/mysql-service created
+PS D:\Salesforce_apache_camel\kubenates\cammands> kubectl apply -f .\jbpm-deployment.yaml
+deployment.apps/jbpm-deployment created
+service/jbpm-service created
+PS D:\Salesforce_apache_camel\kubenates\cammands> kubectl get svc kubectl get svc
+Error from server (NotFound): services "kubectl" not found
+Error from server (NotFound): services "get" not found
+Error from server (NotFound): services "svc" not found
+PS D:\Salesforce_apache_camel\kubenates\cammands> kubectl get svc jbpm-service
+NAME           TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+jbpm-service   NodePort   10.103.36.205   <none>        8080:32387/TCP   4m28s
+PS D:\Salesforce_apache_camel\kubenates\cammands> kubectl port-forward svc/jbpm-service local-port:8080
+error: error parsing local port 'local-port': strconv.ParseUint: parsing "local-port": invalid syntax
+PS D:\Salesforce_apache_camel\kubenates\cammands> kubectl port-forward svc/jbpm-service 8080:8080

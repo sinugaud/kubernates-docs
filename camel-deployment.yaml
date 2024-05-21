@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: camel-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: camel
+  template:
+    metadata:
+      labels:
+        app: camel
+    spec:
+      containers:
+        - name: camel
+          image: sinugaud/spring-camel-jbpm
+          ports:
+            - containerPort: 8089
+          env:
+            - name: camel_component_salesforce_username
+              value: sinu@rutusoft.box
+            - name: camel_component_salesforce_password
+              value: giSLWapKq8tTzwhyMSNSxCjm4UGBEVO1FRTmEk7
+            - name: camel_component_salesforce_clientId
+              value: 3MVG95mg0lk4bathVhLOCxlLvz6hXaKpJ40tLwoRgJaPPpYhLAV57SG5zQjncrl5ot3f_BGHz6iAMAApIZ8is
+            - name: camel_component_salesforce_clientSecret
+              value: 7F10E6AC9A378D59DFB79CA7237F7D7F15131B1C6CDAF277C7F092CDEEA8D7E9
+            - name: camel_component_salesforce_loginUrl
+              value: https://rutusoft-dev-ed.develop.my.salesforce.com
+            - name: camel_component_salesforce_contact_name
+              value: salesforceContactComponent
+            - name: camel_component_salesforce_case_name
+              value: salesforceCaseComponent
+            - name: camel_component_salesforce_task_name
+              value: salesforceTaskComponent
+            - name: camel_component_salesforce_task_complete.name
+              value: salesforceTaskCompleteComponent
+            - name: camel_component_salesforce_package
+              value: com.rutusoft.camel.dto
+            - name: JBPM_SERVER_URL
+              value: http://jbpm-service:8080/kie-server/services/rest/server
+            - name: JBPM_SERVER_USER
+              value: krisv          
+            - name: JBPM_SERVER_PASS
+              value: krisv        
+            - name: JBPM_DEPLOYMENT_ID
+              value: jbpm-salesforce-integration-1_1.0.0-SNAPSHOT
+            - name: JBPM_PROCESS_ID
+              value: jbpm-salesforce-integration.process_new_case                 
+            - name: JBPM_PROCESS_DATA
+              value: data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: camel-service
+spec:
+  selector:
+    app: camel
+  ports:
+    - protocol: TCP
+      port: 8089
+      targetPort: 8089
+  type: NodePort

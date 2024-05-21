@@ -1,0 +1,100 @@
+
+==> Audit <==
+|-----------|------------------------|----------|--------------------------|---------|---------------------|---------------------|
+|  Command  |          Args          | Profile  |           User           | Version |     Start Time      |      End Time       |
+|-----------|------------------------|----------|--------------------------|---------|---------------------|---------------------|
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 05 Oct 23 16:07 IST | 05 Oct 23 16:10 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 05 Oct 23 16:11 IST |                     |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 05 Oct 23 17:48 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 07 Oct 23 15:59 IST | 07 Oct 23 16:00 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 07 Oct 23 16:00 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 07 Oct 23 16:16 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 07 Oct 23 16:16 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 07 Oct 23 16:22 IST | 07 Oct 23 16:23 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 07 Oct 23 16:23 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 10 Oct 23 21:59 IST | 10 Oct 23 21:59 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 10 Oct 23 22:00 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 18 Oct 23 11:10 IST | 18 Oct 23 11:11 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 18 Oct 23 11:13 IST |                     |
+| stop      |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 18 Oct 23 12:07 IST | 18 Oct 23 12:07 IST |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 19 Oct 23 10:42 IST | 19 Oct 23 10:43 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 19 Oct 23 10:51 IST |                     |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 19 Oct 23 10:53 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 19 Oct 23 12:15 IST | 19 Oct 23 12:17 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 19 Oct 23 12:23 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 19 Oct 23 13:12 IST | 19 Oct 23 13:12 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 19 Oct 23 13:13 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 20 Oct 23 10:36 IST | 20 Oct 23 10:37 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 20 Oct 23 10:55 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 20 Oct 23 16:04 IST | 20 Oct 23 16:05 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 20 Oct 23 16:05 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 13:21 IST | 27 Nov 23 13:22 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 13:23 IST |                     |
+| stop      |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 14:44 IST | 27 Nov 23 14:44 IST |
+| start     | --cpus=4 --memory=8192 | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 14:45 IST |                     |
+| start     | --cpus=4 --memory=7780 | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 14:45 IST | 27 Nov 23 14:46 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 14:46 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 15:43 IST | 27 Nov 23 15:44 IST |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 15:47 IST |                     |
+| start     | --cpus=4 --memory=7780 | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 15:48 IST | 27 Nov 23 15:49 IST |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 15:49 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 17:06 IST |                     |
+| start     |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 17:06 IST |                     |
+| dashboard |                        | minikube | LAPTOP-Q57OC2R1\Rutusoft | v1.31.2 | 27 Nov 23 17:07 IST |                     |
+|-----------|------------------------|----------|--------------------------|---------|---------------------|---------------------|
+
+
+==> Last Start <==
+Log file created at: 2023/11/27 17:06:24
+Running on machine: LAPTOP-Q57OC2R1
+Binary: Built with gc go1.20.7 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I1127 17:06:24.896174   21568 out.go:296] Setting OutFile to fd 84 ...
+I1127 17:06:24.896174   21568 out.go:309] Setting ErrFile to fd 92...
+W1127 17:06:24.914737   21568 root.go:314] Error reading config file at C:\Users\Rutusoft\.minikube\config\config.json: open C:\Users\Rutusoft\.minikube\config\config.json: The system cannot find the file specified.
+I1127 17:06:24.923718   21568 out.go:303] Setting JSON to false
+I1127 17:06:24.930321   21568 start.go:128] hostinfo: {"hostname":"LAPTOP-Q57OC2R1","uptime":541875,"bootTime":1700543109,"procs":388,"os":"windows","platform":"Microsoft Windows 11 Home Single Language","platformFamily":"Standalone Workstation","platformVersion":"10.0.22621.2715 Build 22621.2715","kernelVersion":"10.0.22621.2715 Build 22621.2715","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"34bc2fbf-f762-4e22-a77a-b0b80b404639"}
+W1127 17:06:24.930321   21568 start.go:136] gopshost.Virtualization returned error: not implemented yet
+I1127 17:06:24.932514   21568 out.go:177] 😄  minikube v1.31.2 on Microsoft Windows 11 Home Single Language 10.0.22621.2715 Build 22621.2715
+I1127 17:06:24.934310   21568 notify.go:220] Checking for updates...
+I1127 17:06:24.935455   21568 config.go:182] Loaded profile config "minikube": Driver=docker, ContainerRuntime=docker, KubernetesVersion=v1.27.4
+I1127 17:06:24.935455   21568 driver.go:373] Setting default libvirt URI to qemu:///system
+W1127 17:06:30.963394   21568 docker.go:168] docker version returned error: deadline exceeded running "docker version --format {{.Server.Os}}-{{.Server.Version}}:{{.Server.Platform.Name}}": exit status 1
+I1127 17:06:30.965908   21568 out.go:177] ✨  Using the docker driver based on existing profile
+I1127 17:06:30.966700   21568 start.go:298] selected driver: docker
+I1127 17:06:30.966700   21568 start.go:902] validating driver "docker" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.40@sha256:8cadf23777709e43eca447c47a45f5a4635615129267ce025193040ec92a1631 Memory:4000 CPUs:2 DiskSize:20000 VMDriver: Driver:docker HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.27.4 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.49.2 Port:8443 KubernetesVersion:v1.27.4 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[dashboard:true default-storageclass:true storage-provisioner:true] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\Rutusoft:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0}
+I1127 17:06:30.966700   21568 start.go:913] status for docker: {Installed:true Healthy:false Running:false NeedsImprovement:false Error:exit status 1
+deadline exceeded running "docker version --format {{.Server.Os}}-{{.Server.Version}}:{{.Server.Platform.Name}}"
+k8s.io/minikube/pkg/minikube/registry/drvs/docker.glob..func1
+	/app/pkg/minikube/registry/drvs/docker/docker.go:164
+k8s.io/minikube/pkg/minikube/registry/drvs/docker.status
+	/app/pkg/minikube/registry/drvs/docker/docker.go:97
+k8s.io/minikube/pkg/minikube/registry.Status
+	/app/pkg/minikube/registry/global.go:145
+k8s.io/minikube/pkg/minikube/driver.Status
+	/app/pkg/minikube/driver/driver.go:356
+k8s.io/minikube/cmd/minikube/cmd.selectDriver
+	/app/cmd/minikube/cmd/start.go:692
+k8s.io/minikube/cmd/minikube/cmd.runStart
+	/app/cmd/minikube/cmd/start.go:207
+github.com/spf13/cobra.(*Command).execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:944
+github.com/spf13/cobra.(*Command).ExecuteC
+	/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:1068
+github.com/spf13/cobra.(*Command).Execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.7.0/command.go:992
+k8s.io/minikube/cmd/minikube/cmd.Execute
+	/app/cmd/minikube/cmd/root.go:174
+main.main
+	/app/cmd/minikube/main.go:95
+runtime.main
+	/usr/local/go/src/runtime/proc.go:250
+runtime.goexit
+	/usr/local/go/src/runtime/asm_amd64.s:1598 Reason:PROVIDER_DOCKER_DEADLINE_EXCEEDED Fix:Restart the Docker service Doc:https://minikube.sigs.k8s.io/docs/drivers/docker/ Version:}
+I1127 17:06:30.968332   21568 out.go:177] 
+W1127 17:06:30.969546   21568 out.go:239] 💣  Exiting due to PROVIDER_DOCKER_NOT_RUNNING: deadline exceeded running "docker version --format <no value>-<no value>:<no value>": exit status 1
+W1127 17:06:30.969546   21568 out.go:239] 💡  Suggestion: Restart the Docker service
+W1127 17:06:30.969546   21568 out.go:239] 📘  Documentation: https://minikube.sigs.k8s.io/docs/drivers/docker/
+I1127 17:06:30.971550   21568 out.go:177] 
+
+

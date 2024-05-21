@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-spring-boot-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: spring-boot-app
+          image: sinugaud/spring-camel-jbpm-salesforce:tagname
+          ports:
+            - containerPort: 8089
+          volumeMounts:
+            - name: app-salesforce-secret
+              mountPath: /secret/app-salesforce-secret
+        - name: jbpm-container
+          image: jboss/jbpm-server-full:latest
+      volumes:
+        - name: app-salesforce-secret
+          secret:
+            secretName: app-salesforce-secret

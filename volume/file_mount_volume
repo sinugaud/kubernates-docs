@@ -1,0 +1,20 @@
+#mount file in container 
+
+config-map  are use to mount 
+A ConfigMap allows you to inject configuration data into Pods.
+
+
+PS F:\aws\spring-kube\spring-kube> kubectl create configmap file-mount-map --from-file=file.txt=.\file.txt
+
+
+volumeMounts:
+            - name: config-volume
+              moun  tPath: /app/file.txt  # Replace this with the directory where you want to mount the file
+              readOnly: true  # Optional: set to true if you don't need write access to the mounted file
+      volumes:
+        - name: config-volume
+          configMap:
+            name: file-mount-map 
+
+
+
